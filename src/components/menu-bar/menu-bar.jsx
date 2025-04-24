@@ -95,8 +95,8 @@ import wikiIcon from './icon--wiki.svg';
 import fileIcon from './icon--file.svg';
 import editIcon from './icon--edit.svg';
 
-import openblockLogo from './openblock-logo.svg';
-import openblockLogoSmall from './openblock-logo-small.svg';
+import stemstarLogo from './stemstar-logo.svg';
+import stemstarLogoSmall from './stemstar-logo-small.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -566,7 +566,7 @@ class MenuBar extends React.Component {
                 <div className={styles.mainMenu}>
                     <div className={classNames(styles.menuBarItem)}>
                         <img
-                            alt="OpenBlock"
+                            alt="Stemstar"
                             className={classNames(styles.openblockLogo, {
                                 [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                             })}
@@ -822,7 +822,7 @@ class MenuBar extends React.Component {
                         />
                         {this.state.isOverflow ? null : <FormattedMessage {...ariaMessages.community} />}
                     </div>*/}
-                    <div
+                    {/* <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.wiki)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
                         onClick={this.handleClickOpenWiki}
@@ -832,7 +832,7 @@ class MenuBar extends React.Component {
                             src={wikiIcon}
                         />
                         {this.state.isOverflow ? null : <FormattedMessage {...ariaMessages.wiki} />}
-                    </div>
+                    </div> */}
                     <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
@@ -1052,8 +1052,8 @@ MenuBar.propTypes = {
 };
 
 MenuBar.defaultProps = {
-    logo: openblockLogo,
-    logoSmall: openblockLogoSmall,
+    logo: stemstarLogo,
+    logoSmall: stemstarLogoSmall,
     onShare: () => {}
 };
 
