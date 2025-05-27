@@ -10,7 +10,7 @@ import log from '../lib/log.js';
 import MessageBoxType from '../lib/message-box.js';
 
 const onClickLogo = () => {
-    window.location = 'https://www.openblock.cc/';
+    window.location = 'https://code.stemstar.com/';
 };
 
 const onClickCheckUpdate = () => {
@@ -69,15 +69,16 @@ const onClickAbout = [
             id="gui.menuBar.privacyPolicy"
         />),
         onClick: () => log('Privacy Policy')
-    },
-    {
-        title: (<FormattedMessage
-            defaultMessage="Data settings"
-            description="Menu bar item for data settings"
-            id="gui.menuBar.dataSettings"
-        />),
-        onClick: () => log('Data Settings')
     }
+    // ,
+    // {
+    //     title: (<FormattedMessage
+    //         defaultMessage="Data settings"
+    //         description="Menu bar item for data settings"
+    //         id="gui.menuBar.dataSettings"
+    //     />),
+    //     onClick: () => log('Data Settings')
+    // }
 ];
 
 const handleShowMessageBox = (type, message) => {
