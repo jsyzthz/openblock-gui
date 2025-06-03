@@ -117,7 +117,7 @@ const deviceData = [
             />
         ),
         programMode: ['upload'],
-        programLanguage: ['cpp'],
+        programLanguage: ['c', 'cpp'],
         tags: ['arduino'],
         deviceExtensions: ['scratchstar'],
         helpLink: 'https://code.stemstar.com'
